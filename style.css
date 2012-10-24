@@ -1,0 +1,156 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-size: 12px;
+	font-family: Arial; 
+	margin:0;
+	padding:0;
+}
+ul{
+	/* ul general stye */
+}
+ul, li{
+	list-style:none;
+}
+hr{
+	height: 1px;
+}
+table,td,tr{
+	width: 100%;
+	font-size: 12px;
+	margin-bottom: 5px;
+	padding: 0px 0px 10px 0px;
+}
+table#latLonStatus{
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	color: #111;
+}
+li.weatherForeCastData:first-child{ border-top:none; }
+li.weatherForeCastData:last-child{ border-bottom:none; }
+li.weatherForeCastData{
+	border-bottom: 1px solid #C9C9C9;
+	border-top: 1px solid #B6B6B6;
+	padding: 10px 0px 10px 0px;
+	margin-top: -1px;
+	display: inline-block;
+	width: 100%;
+}
+p.weatherForeCastIcon > img{
+	width: 90%;
+	border: 1px solid #A4A8A8;
+	padding: 2px;
+	margin-right: 5px;
+	background: white;
+}
+p.weatherForeCastIcon{
+	width: 25%;
+	float:right;
+}
+/** Element IDs **/
+#snipingAreaCrosshair{
+
+width: 10%;
+
+height: 20%;
+position: absolute;
+z-index: 99;
+left: 47.5%;
+top: 40%;
+background: url('1350721343_target.png') no-repeat 57% 41%;
+}
+#wrapper { 
+	position: relative; 
+}
+#appControlsV1 { 
+	position: absolute; 
+	z-index: 99; 
+}
+#onLoadGeoLocationEl{
+	font-size: 10px;
+	margin-top: -10px;
+}
+#onLoadGeoLocationEl h2{
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+#foreCast{
+	display: none;
+}
+#preloader{
+	width: 200px;
+	height: 120px;
+	border: 1px solid #eee;
+	background: #fff;
+	z-index: 999;
+	position: absolute;
+	margin: 0 auto;
+	left: 43%;
+	text-align: center;
+	opacity: 0.7;
+	display: none;
+	box-shadow: 1px 1px 5px #ddd;
+}
+#preloader > h2 {
+	margin-top: 47px;
+	color: #3399ff;
+}
+#modal{
+	color: #fff;
+	background: #333;
+	box-shadow: 1px 1px 12px #555;
+	border: 1px solid #121212;
+	height: auto;
+	width: 25%;
+	padding: 10px;
+	display: none;
+	right: 10px;
+	position: absolute;
+	top: 20px;
+	z-index: 999;
+	border-radius:10px;
+	margin:10px 0;
+	opacity:0.9999;
+}
+#textMsgSend{
+	border:1px solid #3399ff;
+	padding: 5px;
+	cursor: pointer;
+	color: #fff;
+	background: rgb(68,209,252); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(68,209,252,1) 0%, rgba(31,191,239,1) 40%, rgba(5,171,224,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(68,209,252,1)), color-stop(40%,rgba(31,191,239,1)), color-stop(100%,rgba(5,171,224,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(68,209,252,1) 0%,rgba(31,191,239,1) 40%,rgba(5,171,224,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(68,209,252,1) 0%,rgba(31,191,239,1) 40%,rgba(5,171,224,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(68,209,252,1) 0%,rgba(31,191,239,1) 40%,rgba(5,171,224,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(68,209,252,1) 0%,rgba(31,191,239,1) 40%,rgba(5,171,224,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44d1fc', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+
+}
+/** Element Class **/
+.celciusData{ font-size: 25px;}
+.left{ float: left; width: 69%;}
+.appControlsV1Class{
+	background: white;
+	left: 80px;
+	top: 20px;
+	height: auto;
+	width: 20%;
+	border: 1px solid lightGrey;
+	box-shadow: 1px 1px 7px #D8D8D8;
+	padding: 10px;
+	color: #111;
+}
+.tempData{
+	font-weight: bold;
+}
+.tempData small{
+	font-size: 14px;
+}
+.dayNum{
+	font-size: 30px;
+	font-weight: bold;
+}
+	
